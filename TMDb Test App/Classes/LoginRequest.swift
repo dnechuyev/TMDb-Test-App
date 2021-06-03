@@ -29,7 +29,7 @@ struct TokenApprove: Codable {
     let expires_at: Date?
     let request_token: String?
     let status_message: String?
-    let status_code: String?
+    let status_code: Int?
 }
 
 struct SessionID: Codable {
@@ -61,7 +61,7 @@ class LoginRequest {
         var requestTokenURL = URLRequest(url: urlRequestToken)
         requestTokenURL.httpMethod = "GET"
         
-        URLSession.shared.dataTask(with: requestTokenURL) { (data, response, error) in
+        URLSession.shared.dataTask(with: requestTokenURL) { data, response, error in
             
             guard let data = data, error == nil else {
                 completion(.failure(.custom(errorMessage: "Request token isn't available")))
@@ -95,9 +95,7 @@ class LoginRequest {
                     completion(.failure(.custom(errorMessage: "No approval data")))
                     return
                 }
-                print("Data: \(data)")
-                print(response)
-                print(error)
+
                 //try! JSONDecoder().decode(TokenApprove.self, from: data)
                 
                 guard let approvalResponse = try? JSONDecoder().decode(TokenApprove.self, from: data) else {

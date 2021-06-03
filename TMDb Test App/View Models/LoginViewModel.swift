@@ -2,7 +2,7 @@
 //  Login Model.swift
 //  TMDb Test App
 //
-//  Created by developer on 31.05.2021.
+//  Created by Dmytro Nechuyev on 31.05.2021.
 //
 
 import Foundation

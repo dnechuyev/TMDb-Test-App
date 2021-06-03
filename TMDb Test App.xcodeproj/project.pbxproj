@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BD8B26226682CC90091497D /* RequestPopularFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8B26126682CC90091497D /* RequestPopularFilms.swift */; };
+		8BD8B266266833E90091497D /* PopularFilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8B265266833E90091497D /* PopularFilmModel.swift */; };
+		8BD8B26D2668439B0091497D /* PopularFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8B26C2668439B0091497D /* PopularFilmsView.swift */; };
+		8BD8B27026684CF60091497D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8B26F26684CF60091497D /* ImageLoader.swift */; };
 		8BE97AB82664288500D13F92 /* TMDb_Test_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE97AB72664288500D13F92 /* TMDb_Test_AppApp.swift */; };
 		8BE97ABA2664288500D13F92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE97AB92664288500D13F92 /* ContentView.swift */; };
 		8BE97ABC2664288D00D13F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE97ABB2664288D00D13F92 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BD8B26126682CC90091497D /* RequestPopularFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPopularFilms.swift; sourceTree = "<group>"; };
+		8BD8B265266833E90091497D /* PopularFilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFilmModel.swift; sourceTree = "<group>"; };
+		8BD8B26C2668439B0091497D /* PopularFilmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFilmsView.swift; sourceTree = "<group>"; };
+		8BD8B26F26684CF60091497D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8BE97AB42664288500D13F92 /* TMDb Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDb Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE97AB72664288500D13F92 /* TMDb_Test_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDb_Test_AppApp.swift; sourceTree = "<group>"; };
 		8BE97AB92664288500D13F92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 			children = (
 				8BE97AB72664288500D13F92 /* TMDb_Test_AppApp.swift */,
 				8BE97AB92664288500D13F92 /* ContentView.swift */,
+				8BD8B26C2668439B0091497D /* PopularFilmsView.swift */,
 				8BE97ABB2664288D00D13F92 /* Assets.xcassets */,
 				8BE97AC02664288D00D13F92 /* Info.plist */,
 				8BFF5CDA26654A6600306457 /* View Models */,
@@ -79,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				8BE97AC826642C0800D13F92 /* LoginRequest.swift */,
+				8BD8B26126682CC90091497D /* RequestPopularFilms.swift */,
+				8BD8B26F26684CF60091497D /* ImageLoader.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8BFF5CDB26654A8600306457 /* LoginViewModel.swift */,
+				8BD8B265266833E90091497D /* PopularFilmModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -163,7 +175,11 @@
 				8BE97AC926642C0800D13F92 /* LoginRequest.swift in Sources */,
 				8BE97ABA2664288500D13F92 /* ContentView.swift in Sources */,
 				8BFF5CDC26654A8600306457 /* LoginViewModel.swift in Sources */,
+				8BD8B266266833E90091497D /* PopularFilmModel.swift in Sources */,
 				8BE97AB82664288500D13F92 /* TMDb_Test_AppApp.swift in Sources */,
+				8BD8B26D2668439B0091497D /* PopularFilmsView.swift in Sources */,
+				8BD8B27026684CF60091497D /* ImageLoader.swift in Sources */,
+				8BD8B26226682CC90091497D /* RequestPopularFilms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
